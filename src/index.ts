@@ -26,4 +26,8 @@ export {
   ReportPlugin
 } from './plugin';
 
-export type actions = GlobalEventHandlersEventMap
+export type touch = 'touchstart' | 'touchend' | 'touchmove';
+export type mouse = 'mousedown' | 'mouseup' | 'mouseenter' | 'mouseleave' | 'mouseover' | 'click' | 'dblclick' | 'focus' | 'blur';
+export type keyboard = 'keydown' | 'keyup' | 'keypress' | 'input' | 'change';
+export type actions = touch | mouse | keyboard;
+
